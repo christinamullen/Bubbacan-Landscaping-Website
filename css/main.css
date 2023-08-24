@@ -1,6 +1,16 @@
 /* Fonts */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Patua+One);
+:root {
+    --c-whtHeader: #212121;
+    --c-subHead: #CDAA64;
+    --c-actLink: #8EBD8F;
+    --c-contactText: #D9BE8D;
+    --c-bkgContact: #3C4F2F;
+    --c-bkgFooter: #1B2C0F;
+    --ts-textShadow: 2px 2px 0px #000;
+    --bs-boxShadow: 2px 2px 0px #000;
 
+}
 * {
     box-sizing: border-box;
 }
