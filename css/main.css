@@ -3,19 +3,130 @@
 :root {
     --c-whtHeader: #212121;
     --c-subHead: #CDAA64;
-    --c-actLink: #8EBD8F;
     --c-contactText: #D9BE8D;
     --c-bkgContact: #3C4F2F;
     --c-bkgFooter: #1B2C0F;
+    --c-textActive: #8EBD8F;
+    --c-grnText: #014701;
     --ts-textShadow: 2px 2px 0px #000;
-    --bs-boxShadow: 2px 2px 0px #000;
+    --bs-boxShadow: 2px 2px 0px #6E6C52;
+
+    --ff-Title: 'Patua One', serif;
+    --ff-subHead: 'Lato', serif;
+
 
 }
 * {
     box-sizing: border-box;
 }
 
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
+header {
+    background: rgba(0, 0, 0, 0.5) url('../assets/imgs/grass.jpg');
+    text-align: center;
+    padding-bottom: 75px;
+    color: white;
+    background-attachment: fixed;
+}
+
+h1, .subHeadText, nav {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+h1 {
+    font-family: var(--ff-Title);
+    font-weight: normal;
+}
+h1 > span {
+    font-family: 'Palatino', serif;
+    font-style: italic;
+}
+header > h2 {
+    color: var(--c-subHead);
+    padding-top: 1rem;
+    font-family: var(--ff-subHead);
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: inline;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+    font-family: var(--ff-subHead);
+}
+
+.current {
+    color: var(--c-textActive);
+    text-decoration-line: overline;
+}
+
+.notCur {
+    text-decoration-line: underline;
+}
+
+.hero-img {
+    border: var(--c-contactText) 5px solid;
+    border-radius: 50%;
+    margin: -3rem auto 2rem auto;
+}
+.intro {
+    font-family: var(--ff-subHead);
+    max-width: 1000px;
+}
+.intro > h2 {
+    font-weight:bold;
+}
+
+.intro > p {
+    text-align: left;
+    color: var(--c-grnText);
+    padding: 0% 10%;
+}
+
+article {
+    background-image: url('/assets/imgs/bg.jpg');
+}
+
+.services {
+    background-color: rgba(256,256, 256, 0.5);
+    padding: 3%;
+    margin: 5%;
+    box-shadow: var(--bs-boxShadow);
+    border-radius: 15px 0px 15px 25px;
+}
+.services > h2 {
+    font-family: var(--ff-subHead);
+}
+
+.services > p {
+    text-align: left;
+    font-family: var(--ff-subHead);
+    padding: 0 5%;
+}
+
+.contact {
+    padding: 16px;
+    background-color: var(--c-bkgContact);
+    color: var(--c-subHead);
+    color: var(--c-contactText);
+    
+}
+
+
+footer {
+    background-color: var(--c-bkgFooter);
+    padding: 8px;
+    color: var(--c-subHead);
+    size: 8px;
+
+}
 
 @media only screen and (min-width : 700px) {
 
