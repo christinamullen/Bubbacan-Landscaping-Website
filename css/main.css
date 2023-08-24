@@ -84,6 +84,7 @@ nav > ul {
 .intro {
     font-family: var(--ff-subHead);
     max-width: 1000px;
+    text-align: center;
 }
 .intro > h2 {
     font-weight:bold;
