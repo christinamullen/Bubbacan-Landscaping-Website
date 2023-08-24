@@ -1,4 +1,5 @@
 /* Fonts */
+/*@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&family=Patua+One&family=Alice&display=swap');*/
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Patua+One);
 :root {
     --c-whtHeader: #212121;
@@ -12,7 +13,8 @@
     --bs-boxShadow: 2px 2px 0px #6E6C52;
 
     --ff-Title: 'Patua One', serif;
-    --ff-subHead: 'Lato', serif;
+    --ff-subHead: 'Lato', Arial, sans-serif;;
+    --ff-amp: 'Alice', serif;
 
 
 }
@@ -29,7 +31,7 @@ body, h1, h2, ul {
 header {
     background: rgba(0, 0, 0, 0.5) url('../assets/imgs/grass.jpg');
     text-align: center;
-    padding-bottom: 75px;
+    padding-bottom: 100px;
     color: white;
     background-attachment: fixed;
 }
@@ -43,13 +45,14 @@ h1 {
     text-shadow: var(--ts-textShadow);
 }
 h1 > span {
-    font-family: 'Palatino', serif;
-    font-style: italic;
+    font-family: var(--ff-amp);
+    
 }
 header > h2 {
     color: var(--c-subHead);
     padding-top: 1rem;
     font-family: var(--ff-subHead);
+    font-size: large;
 }
 
 nav > ul {
@@ -57,9 +60,9 @@ nav > ul {
     list-style-type: none;
     flex-direction: inline;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
     padding-top: 2rem;
-    padding-bottom: .5rem;
+    padding-bottom: .75rem;
     font-family: var(--ff-subHead);
 }
 
@@ -163,11 +166,36 @@ a[href^="tel://"] {
 footer {
     background-color: var(--c-bkgFooter);
     padding: 8px;
-    color: var(--c-subHead);
+    color: var(--c-contactText);
     size: 8px;
+    font-family: var(--ff-subHead);
+
+}
+
+@media only screen and (max-width : 700px) {
+    .servicesList li span {
+        display: block;
+    }
 
 }
 
 @media only screen and (min-width : 700px) {
+    nav > ul {
+        gap: 40px;
+    }
+
+}
+
+@media only screen and (min-width : 900px) {
+    nav > ul {
+        gap: 60px;
+    }
+
+}
+
+@media only screen and (min-width : 1200px) {
+    nav > ul {
+        gap: 100px;
+    }
 
 }
