@@ -44,7 +44,7 @@ h1 {
     text-shadow: var(--ts-textShadow);
 }
 h1 > span {
-    font-family: var(--ff-amp);
+    font-family: var(--ff-Title);
     
 }
 header > h2 {
