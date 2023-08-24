@@ -40,6 +40,7 @@ h1, .subHeadText, nav {
 h1 {
     font-family: var(--ff-Title);
     font-weight: normal;
+    text-shadow: var(--ts-textShadow);
 }
 h1 > span {
     font-family: 'Palatino', serif;
@@ -75,6 +76,7 @@ nav > ul {
     border: var(--c-contactText) 5px solid;
     border-radius: 50%;
     margin: -3rem auto 2rem auto;
+
 }
 .intro {
     font-family: var(--ff-subHead);
@@ -105,18 +107,56 @@ article {
     font-family: var(--ff-subHead);
 }
 
-.services > p {
+
+.services > ul {
     text-align: left;
     font-family: var(--ff-subHead);
-    padding: 0 5%;
+    padding: 3% 10%;
+    font-weight: bold;
+}
+
+li > span {
+    color: var(--c-grnText);
+    font-weight: normal;
+    
+}
+
+.services > ul > li:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 .contact {
+    font-family: var(--ff-subHead);
     padding: 16px;
     background-color: var(--c-bkgContact);
-    color: var(--c-subHead);
     color: var(--c-contactText);
     
+}
+
+.contact >h2 {
+    text-shadow: var(--ts-textShadow);
+    padding-bottom: 1.5rem;
+}
+
+a[href^="tel://"] {
+    text-decoration: none; 
+    color: inherit; 
+    text-decoration-line: underline;
+    font-weight: bold;
+    font-size: larger;
+    padding-bottom: 1rem;
+}
+.social {
+    padding-top: 1rem;
+}
+
+.social img {
+    width: 35px;
+    height: auto;
+}
+
+.social a:not(:last-child) {
+    padding-right: 5%;
 }
 
 
