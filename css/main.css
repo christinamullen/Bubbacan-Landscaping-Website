@@ -1,6 +1,7 @@
 /* Fonts */
-/*@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&family=Patua+One&family=Alice&display=swap');*/
-@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Patua+One');
+/*@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Patua+One');*/
+@import url('https://fonts.googleapis.com/css?family=Alice|Patua+One|Lato:300,400,700,300italic,400italic,700italic&display=swap');
+
 :root {
     --c-whtHeader: #212121;
     --c-subHead: #CDAA64;
@@ -13,7 +14,7 @@
     --bs-boxShadow: 2px 2px 0px #6E6C52;
 
     --ff-Title: 'Patua One', serif;
-    --ff-subHead: 'Lato', Arial, sans-serif;;
+    --ff-subHead: 'Lato', sans-serif;;
     --ff-amp: 'Alice', serif;
 
 }
@@ -44,7 +45,7 @@ h1 {
     text-shadow: var(--ts-textShadow);
 }
 h1 > span {
-    font-family: var(--ff-Title);
+    font-family: var(--ff-amp);
     
 }
 header > h2 {
